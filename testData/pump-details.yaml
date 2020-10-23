@@ -1,0 +1,7 @@
+PUMPMODEL:
+  - SearchTag: N 3000
+    series: N 3000, N-technology pumps, Flygt
+    quantity: "56"
+  - SearchTag: N 4000
+    series: N 4000, N-technology pumps, Flygt
+    quantity: "55"

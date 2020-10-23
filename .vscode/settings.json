@@ -1,0 +1,58 @@
+{
+  "cucumberautocomplete.steps": ["e2e/**/*.ts", "custom-libraries/**/*.ts"],
+  "cucumberautocomplete.syncfeatures": "e2e/features/*.feature",
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": true,
+  "cucumberautocomplete.skipDocStringsFormat": true,
+  "cucumberautocomplete.onTypeFormat": true,
+
+  "cucumberautocomplete.customParameters": [
+    {
+      "parameter": "\"(.*)\"",
+      "value": "\".*\""
+    }
+  ],
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then|And)\\(",
+  "files.autoSave": "afterDelay",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 0,
+  "json.format.enable": false,
+  "terminal.integrated.rendererType": "dom",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "editor.accessibilitySupport": "off",
+  "typescript.referencesCodeLens.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.enableFiletypes": [
+    "dotenv",
+    "feature",
+    "text",
+    "typescript",
+    "typescriptreact"
+  ],
+  "cucumber-quick": {
+    "tool": "protractor",
+    "script": "npx protractor launch"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "cSpell.words": [
+    "Flygt",
+    "Javed",
+    "PUMPMODEL",
+    "Sftp",
+    "cosmosdb",
+    "downlevel",
+    "xylect"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowUnusedLabels": false,
+
+    "baseUrl": "./",
+    "paths": {
+      "e2e/*": ["./e2e/*"],
+      "custom-libraries": ["./custom-libraries/index.ts"],
+      "config/*": ["./config/*"]
+    },
+    "lib": ["dom", "es6", "es7"],
+    "declaration": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "outDir": "transform",
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "mapRoot": "transform",
+    "esModuleInterop": true,
+    "target": "es5",
+    "downlevelIteration": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "cucumber"]
+  },
+  "exclude": ["node_modules", "typescript"]
+}

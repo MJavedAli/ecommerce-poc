@@ -1,0 +1,7 @@
+USERS:
+  - Scenario_ID: Valid
+    username: testpoc1
+    password: 5nG%7#3G%yLh
+  - Scenario_ID: Invalid
+    username: testinvalid
+    password: hgkjhlkh

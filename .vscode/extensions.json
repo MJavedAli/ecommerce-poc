@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "alexkrechik.cucumberautocomplete",
+    "christian-kohler.path-intellisense",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "streetsidesoftware.code-spell-checker",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
+}

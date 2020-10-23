@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["custom-libraries/**/*.ts", "e2e/**/*.ts"],
+
+  "exclude": ["node_modules"]
+}
