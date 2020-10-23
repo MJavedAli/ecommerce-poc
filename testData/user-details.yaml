@@ -1,0 +1,15 @@
+USER:
+  - UserType: TESTUSER1
+    name: Javed Ali
+    country: India
+    city: Kolkata
+    creditcard: "7980634512345643"
+    month: "08"
+    year: "2022"
+  - UserType: TESTUSER2
+    name: John Doe
+    country: USA
+    city: New York
+    creditcard: "7980634512345643"
+    month: "08"
+    year: "2022"

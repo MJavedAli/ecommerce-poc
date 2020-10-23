@@ -1,2 +1,2 @@
 export * from './home.page';
-export * from './projects.page';
+export * from './cart.page';

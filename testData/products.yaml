@@ -1,0 +1,7 @@
+CATEGORIES:
+  - ITEMS: UC1_LAPTOPS
+    ADD_ITEMS: Sony vaio i5,Dell i7 8gb
+    DELETE_ITEMS: Dell i7 8gb
+  - ITEMS: UC2_PHONES
+    ADD_ITEMS: item1,item2
+    DELETE_ITEMS: item2

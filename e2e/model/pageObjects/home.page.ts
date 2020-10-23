@@ -1,23 +1,52 @@
-import { by, element, ElementFinder } from 'protractor';
+import { by, element, ElementFinder, browser, protractor } from 'protractor';
+import { p, expect, logger } from 'custom-libraries';
+var EC = protractor.ExpectedConditions;
 
 class HomePage {
-  public allLogo: ElementFinder;
-  public btnPrivacyAccept: ElementFinder;
-  public btnCookieAccept: ElementFinder;
-  public consentBox: ElementFinder;
-  public txtUsername: ElementFinder;
-  public txtPassword: ElementFinder;
-  public btnLogon: ElementFinder;
+
+  public navLinkHome: ElementFinder;
+  public navLinkCart: ElementFinder;
+  public linkLaptop: ElementFinder;
+  public logo: ElementFinder;
+  public btnAddToCart: ElementFinder;
+
 
   constructor() {
-    this.allLogo = element(by.xpath("//img[@id='all_logos']"));
-    this.btnPrivacyAccept = element(by.xpath("//a[@id='xyl-privacy-accept']"));
-    this.btnCookieAccept = element(by.xpath("//a[@id='xyl-cookies-accept']"));
-    this.consentBox = element(by.xpath("//div[@id='xyl-consent']"));
-    this.txtUsername = element(by.xpath("//input[@id='inpage_login_user']"));
-    this.txtPassword = element(by.xpath("//input[@id='inpage_login_passwd']"));
-    this.btnLogon = element(by.xpath("//a[@id='inpage_login_submit']"));
+    this.linkLaptop = element(by.xpath("//a[contains(text(),'Laptops')]"));
+    this.navLinkHome = element(by.css('.active > .nav-link'));
+    this.navLinkCart = element(by.xpath("//a[contains(text(),'Cart')]"));
+    this.logo = element(by.css('.navbar-brand#nava'));
+    this.btnAddToCart = element(by.linkText('Add to cart'));
   }
+
+  async launchBasePage() {
+    await browser.get(process.env.APP_BASE_URL);
+    await p.browserWaitElementVisible(this.navLinkHome);
+    expect(this.logo).to.be.present;
+  }
+
+  async navigateToLaptop() {
+    await p.click(this.linkLaptop);
+  }
+
+  async addToCartProduct(products: string) {
+    const productLists = products.split(',');
+    for (let i in productLists) {
+      await p.click(element(by.xpath("//a[contains(text(),'" + productLists[i] + "')]")));
+      await p.click(this.btnAddToCart);
+      await browser.wait(EC.alertIsPresent(), 5000);
+      await browser.switchTo().alert().accept();
+      logger.info(`product added to cart is ${productLists[i]}`);
+      await p.click(this.navLinkHome);
+      await p.click(this.linkLaptop);
+    }
+  }
+
+  async navigateToCart() {
+    await p.click(this.navLinkCart);
+  }
+
+
 }
 
 export const homePage: HomePage = new HomePage();
