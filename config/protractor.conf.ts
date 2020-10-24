@@ -35,7 +35,6 @@ const config: Config = {
 
   framework: 'custom',
   frameworkPath: require.resolve('@serenity-js/protractor/adapter'),
-  // frameworkPath: require.resolve('protractor-cucumber-framework'),
 
   SELENIUM_PROMISE_MANAGER: false,
   baseUrl: process.env.APP_BASE_URL,

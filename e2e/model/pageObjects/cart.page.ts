@@ -1,7 +1,7 @@
 
 import { by, element, ElementFinder } from 'protractor';
 import { p, yamlHelper, logger, expect } from 'custom-libraries';
-import { globalVariable } from 'testData/globalVariable';
+import { globalVariable } from 'testData/global-variable';
 
 class CartPage {
   public btnOK: ElementFinder;

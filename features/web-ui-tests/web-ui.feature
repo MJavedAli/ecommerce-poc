@@ -1,6 +1,6 @@
 Feature: Laptop Purchase Test
 
-    @MJA
+    @Exercise-2 @WEB
     Scenario Outline: To verify that the user is purchase laptop products successfully
         Given I am on Demoblaze Home page
         When I navigate to Laptop section

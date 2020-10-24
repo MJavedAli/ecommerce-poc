@@ -1,0 +1,7 @@
+PET:
+  - PETTYPE: VALIDPET
+    categoryname: Dog
+    name: Marshall
+  - PETTYPE: INVALIDPET
+    categoryname: xyz
+    name: abc

@@ -1,7 +1,7 @@
 {
-  "name": "xylem-automation-poc",
+  "name": "adidas-automation-poc",
   "version": "1.0.0",
-  "description": "Repository for Xylem POC Automation- Javed Ali",
+  "description": "Repository for adidas POC Automation- Javed Ali",
   "types": "./**/*.d.ts",
   "scripts": {
     "build": "tsc",

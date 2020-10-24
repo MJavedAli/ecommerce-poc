@@ -1,4 +1,4 @@
-# XYLEM Interview Test Automation Framework
+# ADIDAS Interview Test Automation Framework
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -17,7 +17,6 @@
 - [Lint Automation Code](#lint-automation-code)
 - [Test Reports](#test-reports)
 - [Serenity Dashboard](#serenity-dashboard)
-- [Code-Documentation](https://gecgithub01.walmart.com/pages/GD-CCPA-DataEnablement/GD_CCPA_QA_Automation/docs/)
 
 ## Get Started
 

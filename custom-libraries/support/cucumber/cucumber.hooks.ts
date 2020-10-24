@@ -7,9 +7,7 @@ import { actorCalled, engage } from '@serenity-js/core';
 import { TakeScreenshot } from '@serenity-js/protractor';
 import { After, Before, BeforeAll } from 'cucumber';
 import { browser } from 'protractor';
-
 import { Actors } from '../serenity/actors';
-import { logger } from 'custom-libraries/utils';
 /**
  * Maximize the browser
  */
@@ -21,14 +19,8 @@ BeforeAll(async () => {
 /**
  * As per Serenity Js guidelines, attach an Actor before each test to add capability to take picture at the end of the test
  */
-Before((scenario) => {
+Before(() => {
   engage(new Actors());
-  scenario.pickle.name = 'Javed :' + scenario.pickle.name
-  if (scenario.pickle.name.includes('javed')) {
-    logger.info('This scenario has to be skipped for MST');
-    return 'skipped';
-  }
-
 });
 
 /**
